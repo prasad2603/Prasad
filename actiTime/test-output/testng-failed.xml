@@ -4,6 +4,39 @@
   <listeners>
     <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
   </listeners>
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="actiTime.SecondHeader">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="deleteObject"/>
+          <include name="closeBrowser"/>
+          <include name="logOut"/>
+          <include name="verifyTaskButton"/>
+          <include name="verifyReportButton"/>
+          <include name="loginApplication"/>
+          <include name="object"/>
+          <include name="verifyUserTab"/>
+        </methods>
+      </class> <!-- actiTime.SecondHeader -->
+      <class name="actiTime.Verify_All_header">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyTimeTrack"/>
+          <include name="verifyReportButton"/>
+          <include name="loginApplication"/>
+          <include name="object"/>
+          <include name="deleteObject"/>
+          <include name="verifyWorkscheduleButton"/>
+          <include name="launchBrowser"/>
+          <include name="verifyUserTab"/>
+          <include name="verifyTaskButton"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- actiTime.Verify_All_header -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>

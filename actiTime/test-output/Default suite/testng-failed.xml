@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actiTime.SecondHeader">
+      <class name="actiTime.TaskCreation">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="deleteObject"/>
-          <include name="closeBrowser"/>
-          <include name="logOut"/>
           <include name="loginApplication"/>
+          <include name="createTask_User"/>
           <include name="object"/>
-          <include name="verifyUserTab"/>
+          <include name="logOut"/>
+          <include name="createTask_Task"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="deleteObject"/>
+          <include name="createTask_TimeTrack"/>
         </methods>
-      </class> <!-- actiTime.SecondHeader -->
+      </class> <!-- actiTime.TaskCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

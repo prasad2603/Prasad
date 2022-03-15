@@ -81,7 +81,7 @@ public class HTML_Table_findElements {
 		for(int i=0;i<no;i++)
 		{
 			WebElement ele=img.get(i);
-			String data=ele.getAttribute("href");
+			String data=ele.getText();
 			System.out.println(data);
 			if(data.equals(null))
 			{

@@ -35,8 +35,8 @@ public class Methods_Of_WebDriver {
 		Thread.sleep(1000);
 		
 		//3.manage
-		//magage();-->.window();,.timeouts();
-		//window();-->maximize();,.minimize();,..setPosition(s);,..setSize(d);
+//		magage();-->.window();,.timeouts();
+//		window();-->maximize();,.minimize();,..setPosition(s);,..setSize(d);
 		Dimension d= new Dimension(600, 300);//L*H
 		driver.manage().window().setSize(d);
 		

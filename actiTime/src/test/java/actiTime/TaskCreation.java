@@ -47,8 +47,8 @@ public class TaskCreation extends Pojo {
 		static ExtentHtmlReporter reporter;
 		
 		@BeforeTest
-		@Parameters("browser")
-		public void launchBrowser(String browserName)
+//		@Parameters("browser")
+		public void launchBrowser()
 		{
 			reporter = new ExtentHtmlReporter("test-output"+File.separator+"ExtendReport"+File.separator+"extendReport.html");
 			ExtentReports extend = new ExtentReports();
@@ -56,14 +56,14 @@ public class TaskCreation extends Pojo {
 			
             System.out.println("launchBrowser");
             
-			if(browserName.equals("Chrome"))
+//			if(browserName.equals("Chrome"))
 			{
 				 driver= launchChromeBrowser();
 			}
-			if(browserName.equals("Firefox"))
-			{
-				 driver= launchFirefoxBrowser();
-			}
+//			if(browserName.equals("Firefox"))
+//			{
+//				 driver= launchFirefoxBrowser();
+//			}
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		@BeforeClass 
