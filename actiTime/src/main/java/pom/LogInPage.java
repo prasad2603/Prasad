@@ -14,9 +14,6 @@ public class LogInPage {
 	@FindBy (xpath="//input[@name='username']")
 	private WebElement userName ;
 	
-	@FindBy (xpath="//input[@name='username']")
-	private WebElement userName1 ;
-	
 	@FindBy (xpath="//input[@name='pwd']")
 	private WebElement password ;
 	
