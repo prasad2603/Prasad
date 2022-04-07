@@ -9,7 +9,8 @@ public class Pojo {
 	public static WebDriver launchChromeBrowser()
 	{
 		ChromeOptions option=new ChromeOptions();
-		option.addArguments("--disable-notifications");
+//		option.addArguments("--disable-notifications");
+		option.addArguments("--incognito");
 		System.setProperty("webdriver.chrome.driver", "E:\\JAVA\\Java\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver(option);
 		return driver;
@@ -17,7 +18,8 @@ public class Pojo {
 	public static WebDriver launchFirefoxBrowser()
 	{
 		ChromeOptions option=new ChromeOptions();
-		option.addArguments("--disable-notifications");
+//		option.addArguments("--disable-notifications");
+		option.addArguments("--incognito");
 		System.setProperty("webdriver.gecko.driver", "E:\\JAVA\\Java\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver(option);
 		return driver;
