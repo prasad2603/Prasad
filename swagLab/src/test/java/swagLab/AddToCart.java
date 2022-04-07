@@ -76,7 +76,7 @@ public class AddToCart extends Browser {
 		overview=new Overview(driver);
 		yourInformation=new YourInformation(driver);
 		yourCArt=new YourCart(driver);
-		System.out.println("prasad Raut");
+		System.out.println("QA prasad Raut");
 	}
 	
 	@BeforeMethod
